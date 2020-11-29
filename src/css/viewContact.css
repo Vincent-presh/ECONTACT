@@ -1,0 +1,80 @@
+.v_container {
+  width: 60%;
+  height: 70%;
+  left: 0px;
+  max-width: 390px;
+  min-height: 130px;
+  padding: 5px;
+  max-height: 600px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  flex-direction: column;
+  z-index: 2;
+}
+.v_cont {
+  top: 86px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 0 10px;
+  position: absolute;
+  justify-content: left;
+  align-items: left;
+  flex-direction: row;
+}
+
+.button-bottom {
+  background-color: #30e036;
+  width: auto;
+  height: 100%;
+  margin: 0 5px;
+  border: none;
+  padding: 3px 8px;
+  align-items: center;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: none;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.disc-menu-body {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.disc-menu-tab {
+  height: 48px;
+  width: 100%;
+  padding: 0 10px;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: row;
+}
+
+.disc-menu-item {
+  height: 100%;
+  width: auto;
+  text-align: justify;
+  padding: 8px 4px;
+  margin: 0 8px;
+  font-size: 13px;
+  color: #818181;
+  font-weight: lighter;
+  border-top: 3px solid transparent;
+}
+
+.disc-menu-item.active {
+  background: inherit !important;
+  border-top: 2px solid #16a5f5 !important;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+  .v_container {
+    width: 90%;
+  }
+}

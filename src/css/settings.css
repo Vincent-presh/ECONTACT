@@ -1,0 +1,16 @@
+#contain_set{
+    position: absolute;
+    right: 10px;
+    bottom: 25%;
+    height: 120px;
+    width: 60px;
+    display: flex;
+    z-index: 3;
+    flex-direction: column;
+}
+
+.button-circle{
+    flex: 0 0 calc(50% - 8px);
+    margin: 3px;
+    padding: 12px 0;
+}
