@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./Home";
 import "./App.css";
 import Login from "./components/Login";
@@ -65,11 +65,11 @@ class App extends Component {
   render() {
     return (
       <div className="container">
-        <Router>
+        <BrowserRouter>
           <Switch>
             <Route
               exact
-              path={"/#/login"}
+              path={"/login"}
               render={(props) => (
                 <Login
                   {...props}
@@ -84,7 +84,7 @@ class App extends Component {
 
             <Route
               exact
-              path={"/#/register"}
+              path={"/register"}
               render={(props) => (
                 <Register
                   {...props}
@@ -97,7 +97,7 @@ class App extends Component {
               )}
             />
             <Route
-              path={"/#"}
+              path={"/"}
               render={(props) => (
                 <Home
                   {...props}
@@ -113,7 +113,7 @@ class App extends Component {
               )}
             />
           </Switch>
-        </Router>
+        </BrowserRouter>
       </div>
     );
   }
