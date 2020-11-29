@@ -69,7 +69,7 @@ class App extends Component {
           <Switch>
             <Route
               exact
-              path={"/login"}
+              path={"/#/login"}
               render={(props) => (
                 <Login
                   {...props}
@@ -84,7 +84,7 @@ class App extends Component {
 
             <Route
               exact
-              path={"/register"}
+              path={"/#/register"}
               render={(props) => (
                 <Register
                   {...props}
@@ -97,7 +97,7 @@ class App extends Component {
               )}
             />
             <Route
-              path={"/"}
+              path={"/#"}
               render={(props) => (
                 <Home
                   {...props}
